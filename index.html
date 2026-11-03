@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Little World 💜</title>
+
+<title>My Dream & Mimi 💜</title>
 
 <style>
 * {
@@ -13,22 +15,53 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f7edff, #e6d5ff);
-    color: #68458c;
+    background: linear-gradient(145deg,#f9f1ff,#e5d2ff);
+    color: #704c91;
     text-align: center;
+    overflow-x: hidden;
 }
 
 header {
-    padding: 35px 15px;
+    padding: 45px 15px 25px;
 }
 
 h1 {
-    color: #9864c9;
-    font-size: 29px;
+    font-size: 30px;
+    color: #9562c5;
 }
 
 .subtitle {
-    color: #9d7bb8;
+    font-size: 15px;
+    color: #a17cbd;
+}
+
+.names {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.heart {
+    color: #e68ab9;
+}
+
+.counter {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    margin: 20px auto;
+    max-width: 350px;
+    box-shadow: 0 5px 20px #d7bfea;
+}
+
+.counter h2 {
+    color: #a16bc9;
+}
+
+.days {
+    font-size: 43px;
+    font-weight: bold;
+    color: #bd85dc;
 }
 
 .container {
@@ -37,15 +70,19 @@ h1 {
 
 .card {
     background: white;
-    border-radius: 22px;
+    border-radius: 23px;
     padding: 25px 15px;
     margin: 18px auto;
-    max-width: 400px;
-    box-shadow: 0 5px 15px #d9c4ed;
+    max-width: 380px;
+    box-shadow: 0 5px 15px #decaf0;
 }
 
 .icon {
-    font-size: 38px;
+    font-size: 42px;
+}
+
+h3 {
+    color: #9c6bc2;
 }
 
 button {
@@ -57,56 +94,145 @@ button {
     font-size: 15px;
 }
 
+.message {
+    background: #fff;
+    border-radius: 20px;
+    padding: 22px;
+    margin: 25px 15px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.butterfly {
+    position: fixed;
+    font-size: 25px;
+    animation: fly 12s linear infinite;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.b1 { left: 5%; animation-delay: 0s; }
+.b2 { left: 80%; animation-delay: 4s; }
+.b3 { left: 45%; animation-delay: 7s; }
+
+@keyframes fly {
+    0% {
+        top: 100%;
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: translateX(40px) rotate(25deg);
+    }
+    100% {
+        top: -10%;
+        transform: rotate(-20deg);
+    }
+}
+
 footer {
-    padding: 25px;
-    color: #a184bc;
+    padding: 30px;
+    color: #a17cbd;
 }
 </style>
 </head>
 
 <body>
 
+<div class="butterfly b1">🦋</div>
+<div class="butterfly b2">🦋</div>
+<div class="butterfly b3">🦋</div>
+
 <header>
-    <div class="icon">🦋💜</div>
+    <div class="icon">💜🦋💜</div>
+
     <h1>Our Little World</h1>
-    <p class="subtitle">Just you and me, forever ❤️</p>
+
+    <p class="subtitle">
+        Welcome to our little paradise
+    </p>
+
+    <div class="names">
+        My Dream <span class="heart">♥</span> Mimi
+    </div>
+
+    <p>Two hearts, one little world. ❤️</p>
 </header>
+
+<div class="counter">
+
+    <div class="icon">💕</div>
+
+    <h2>Our Love Story</h2>
+
+    <div class="days" id="days">0</div>
+
+    <p>Days together</p>
+
+    <p>Since August 27, 2025</p>
+
+</div>
+
+<div class="message">
+    "No matter the distance, you will always
+    have a special place in my heart.
+    I love creating beautiful memories with you." 💜
+</div>
 
 <div class="container">
 
     <div class="card">
         <div class="icon">💌</div>
-        <h2>Our Little Messages</h2>
-        <p>Every day, a little more love.</p>
-        <button>Nos messages</button>
+        <h3>Our Messages</h3>
+        <p>Little words, endless love.</p>
+        <button>Coming Soon</button>
     </div>
 
     <div class="card">
         <div class="icon">🎤</div>
-        <h2>Our Voices</h2>
-        <p>Even far away, I want to hear you.</p>
-        <button>Messages vocaux</button>
+        <h3>Our Voices</h3>
+        <p>I never get tired of hearing your voice.</p>
+        <button>Coming Soon</button>
     </div>
 
     <div class="card">
         <div class="icon">🎁</div>
-        <h2>Surprise Box</h2>
+        <h3>Surprise Box</h3>
         <p>Something special is waiting for you...</p>
-        <button>Découvrir</button>
+        <button>Coming Soon</button>
     </div>
 
     <div class="card">
         <div class="icon">📸</div>
-        <h2>Our Memories</h2>
-        <p>Our beautiful moments together.</p>
-        <button>Nos souvenirs</button>
+        <h3>Our Memories</h3>
+        <p>Every moment with you is precious.</p>
+        <button>Coming Soon</button>
     </div>
 
 </div>
 
 <footer>
-    Made with 💜 just for us
+    Made with 💜 by My Dream, for Mimi.
+    <br><br>
+    Forever Us 🦋
 </footer>
+
+<script>
+const startDate = new Date(Date.UTC(2025, 7, 27));
+const today = new Date();
+
+const todayUTC = Date.UTC(
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate()
+);
+
+const difference = Math.floor(
+    (todayUTC - startDate.getTime()) / 86400000
+);
+
+document.getElementById("days").textContent =
+    difference >= 0 ? difference : 0;
+</script>
 
 </body>
 </html>
